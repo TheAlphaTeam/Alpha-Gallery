@@ -22,3 +22,40 @@ Providing a platform for artists to present their works since it becomes hard wh
 - feed
 - Profile page
 - About us
+
+## Wireframes
+
+- Home
+![image](https://files.slack.com/files-pri/TNGRRLUMA-F02ASMJ1BFU/home.png)
+
+- About
+![image](https://files.slack.com/files-pri/TNGRRLUMA-F02APLPSAMT/about.png)
+
+- Profile
+![image](https://files.slack.com/files-pri/TNGRRLUMA-F02BA7M8MEV/profile.png)
+
+- Feed
+![image](https://files.slack.com/files-pri/TNGRRLUMA-F02B3QRAX7E/posts.png)
+
+- login
+![image](https://files.slack.com/files-pri/TNGRRLUMA-F02BM7X9Z7S/login.png)
+
+- garllery view
+![image](https://files.slack.com/files-pri/TNGRRLUMA-F02AQSCHTQW/gallery.png)
+
+
+
+## Domain Modeling
+
+![image](https://files.slack.com/files-pri/TNGRRLUMA-F02AXRKJ1NF/whiteboarding-niveen__6_.jpg)
+
+
+## User Stories
+
+1- AS an artist user I want to have an account in gallery website.
+2- As a user I want to post a sample of my work in my account.
+3- As a user I want other user to have the ability to   comment and like myposts .
+4- As a user I want my posts to appear in other users feed page.
+5- As a user I want to have the abilty to organize an event to present my work.
+6- As a user I want to see a profile for me where I can post and create events.
+

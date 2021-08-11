@@ -27,33 +27,34 @@ Providing a platform for artists to present their works since it becomes hard wh
 
 - Home
 
-![image1](https://files.slack.com/files-pri/TNGRRLUMA-F02ASMJ1BFU/home.png)
+![Home](https://user-images.githubusercontent.com/55560502/129108229-d54a6cee-1fc6-4c48-9332-6a3b9e5e1eaa.png)
 
 - About
 
-![image2](https://files.slack.com/files-pri/TNGRRLUMA-F02APLPSAMT/about.png)
+![About](https://user-images.githubusercontent.com/55560502/129108255-0eab6929-23e0-4b7f-b439-4252e2ef96c3.png)
+
 
 - Profile
+![profile](https://user-images.githubusercontent.com/55560502/129108308-98083a9a-eda1-431b-8634-68780200bde6.png)
 
-![image3](https://files.slack.com/files-pri/TNGRRLUMA-F02BA7M8MEV/profile.png)
 
 - Feed
+![posts](https://user-images.githubusercontent.com/55560502/129108326-6c51dff4-1776-46b4-8828-6ab298522b5c.png)
 
-![image4](https://files.slack.com/files-pri/TNGRRLUMA-F02B3QRAX7E/posts.png)
 
 - login
 
-![image5](https://files.slack.com/files-pri/TNGRRLUMA-F02BM7X9Z7S/login.png)
+![login](https://user-images.githubusercontent.com/55560502/129108355-e0a705dd-b51d-4994-974c-2bdc8845e030.png)
 
 - garllery view
 
-![image6](https://files.slack.com/files-pri/TNGRRLUMA-F02AQSCHTQW/gallery.png)
-
+![gallery](https://user-images.githubusercontent.com/55560502/129108383-bc47ba58-bdf4-46a3-999c-3b049344c1c1.png)
 
 
 ## Domain Modeling
 
-![image7](https://files.slack.com/files-pri/TNGRRLUMA-F02AXRKJ1NF/whiteboarding-niveen__6_.jpg)
+![models](https://user-images.githubusercontent.com/55560502/129108530-fb051056-b85e-41bc-935b-6de830984733.jpg)
+
 
 
 ## User Stories

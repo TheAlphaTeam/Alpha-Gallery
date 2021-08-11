@@ -27,33 +27,33 @@ Providing a platform for artists to present their works since it becomes hard wh
 
 - Home
 
-![image](https://files.slack.com/files-pri/TNGRRLUMA-F02ASMJ1BFU/home.png)
+![image1](https://files.slack.com/files-pri/TNGRRLUMA-F02ASMJ1BFU/home.png)
 
 - About
 
-![image](https://files.slack.com/files-pri/TNGRRLUMA-F02APLPSAMT/about.png)
+![image2](https://files.slack.com/files-pri/TNGRRLUMA-F02APLPSAMT/about.png)
 
 - Profile
 
-![image](https://files.slack.com/files-pri/TNGRRLUMA-F02BA7M8MEV/profile.png)
+![image3](https://files.slack.com/files-pri/TNGRRLUMA-F02BA7M8MEV/profile.png)
 
 - Feed
 
-![image](https://files.slack.com/files-pri/TNGRRLUMA-F02B3QRAX7E/posts.png)
+![image4](https://files.slack.com/files-pri/TNGRRLUMA-F02B3QRAX7E/posts.png)
 
 - login
 
-![image](https://files.slack.com/files-pri/TNGRRLUMA-F02BM7X9Z7S/login.png)
+![image5](https://files.slack.com/files-pri/TNGRRLUMA-F02BM7X9Z7S/login.png)
 
 - garllery view
 
-![image](https://files.slack.com/files-pri/TNGRRLUMA-F02AQSCHTQW/gallery.png)
+![image6](https://files.slack.com/files-pri/TNGRRLUMA-F02AQSCHTQW/gallery.png)
 
 
 
 ## Domain Modeling
 
-![image](https://files.slack.com/files-pri/TNGRRLUMA-F02AXRKJ1NF/whiteboarding-niveen__6_.jpg)
+![image7](https://files.slack.com/files-pri/TNGRRLUMA-F02AXRKJ1NF/whiteboarding-niveen__6_.jpg)
 
 
 ## User Stories

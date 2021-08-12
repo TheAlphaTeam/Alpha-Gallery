@@ -1,7 +1,9 @@
 build:
-  docker:
-    web: Dockerfile
+    docker:
+        web: Dockerfile
 release:
-  image: web
+    image: web
+    command:
+        - python manage.py collectstatic --noinput
 run:
-  web: gunicorn Alpha_Gallery_API.wsgi --workers 4
+    web: gunicorn Alpha_Gallery_API.wsgi

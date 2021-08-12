@@ -4,4 +4,4 @@ build:
 release:
   image: web
 run:
-  web: gunicorn makeupAPI_project.wsgi --workers 4
+  web: gunicorn Alpha_Gallery_API.wsgi --workers 4

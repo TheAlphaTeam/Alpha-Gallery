@@ -4,6 +4,7 @@ build:
 release:
     image: web
     command:
+        - mkdir -p static
         - python manage.py collectstatic --noinput
 run:
     web: gunicorn Alpha_Gallery_API.wsgi

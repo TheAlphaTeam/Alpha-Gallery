@@ -1,3 +1,5 @@
+from .permissions import IsLoggedInUserOrAdmin, IsAdminUser
+from rest_framework.permissions import AllowAny
 from django.db import models
 from django.shortcuts import render
 from rest_framework import generics , viewsets
@@ -7,7 +9,7 @@ from .serializer import PostsSerializer, UserSerializer,EventsSerializer
 from django.views.generic.edit import CreateView
 
 # Create your views here.
-class PostsListView(generics.ListCreateAPIView):    
+class PostsListView(viewsets.ModelViewSet):    
     serializer_class = PostsSerializer
     queryset = Posts.objects.all()
 
@@ -15,7 +17,7 @@ class PostsDetailsView(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = PostsSerializer
     queryset = Posts.objects.all()
 
-class EventsListView(generics.ListCreateAPIView):    
+class EventsListView(viewsets.ModelViewSet):    
     serializer_class = EventsSerializer
     queryset = Events.objects.all()
 
@@ -27,19 +29,20 @@ class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all()
     serializer_class = UserSerializer
 
-# class UesrListView(generics.ListCreateAPIView):
-#     serializer_class = UserSerializer
-#     queryset = User.objects.all()
-    
-# class UserDetailsView(generics.RetrieveUpdateDestroyAPIView):
-#     serializer_class = UserSerializer
-#     queryset = User.objects.all()
 
-# class ArtestsListView(generics.ListCreateAPIView):    
-#     serializer_class = ArtestsSerializer
-#     queryset = Artests.objects.all()
+class UserViewSet(viewsets.ModelViewSet):
+    queryset = User.objects.all()
+    serializer_class = UserSerializer
 
-# class ArtestsDetailsView(generics.RetrieveUpdateDestroyAPIView):
-#     serializer_class = ArtestsSerializer
-#     queryset = Artests.objects.all()
+    # Add this code block
+    def get_permissions(self):
+        permission_classes = []
+        if self.action == 'create':
+            permission_classes = [AllowAny]
+        elif self.action == 'retrieve' or self.action == 'update' or self.action == 'partial_update':
+            permission_classes = [IsLoggedInUserOrAdmin]
+        elif self.action == 'list' or self.action == 'destroy':
+            permission_classes = [IsAdminUser]
+        return [permission() for permission in permission_classes]
+
 

@@ -49,7 +49,7 @@ class PostsSerializer(serializers.ModelSerializer):
     
     username = serializers.SerializerMethodField()
     class Meta:
-        fields = ('id' ,'user', 'username', 'image', 'image1','image2','image3','image4','discerption','comments', 'likes')
+        fields = ('id' ,'user', 'username', 'image', 'image1','image2','image3','image4','discerption','comments', 'likes','created_at')
         model = Posts
 
 

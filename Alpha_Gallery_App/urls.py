@@ -20,7 +20,6 @@ urlpatterns = [
     url(r'^', include(router.urls)),
     url(r'^', include(router1.urls)),
     url(r'^', include(router2.urls)),
-
     url(r'^auth/', include('rest_auth.urls')),
 ]
 

@@ -3,17 +3,18 @@ from django.urls import path ,include
 from django.conf.urls import url, include
 from rest_framework import routers
 
-from .views import EventsListView ,EventsDetailsView ,PostsListView ,PostsDetailsView,UserViewSet
+from .views import EventsListView ,EventsDetailsView ,PostsListView ,PostsDetailsView,UserViewSet, CurrentUserView
 
 router = routers.DefaultRouter()
 router1 = routers.DefaultRouter()
 router2 = routers.DefaultRouter()
+router3 = routers.DefaultRouter()
 router.register(r'users', UserViewSet)
 router1.register(r'posts', PostsListView)
 router2.register(r'events', EventsListView)
 
 urlpatterns = [
-    # path('posts', PostsListView.as_view(), name ='posts_api'),
+    path('current', CurrentUserView.as_view(), name ='current-user'),
     # path('events', EventsListView.as_view(), name ='events_api'),
     # path('posts/<int:pk>/', PostsDetailsView.as_view(), name ='posts_details'),
     # path('events/<int:pk>/', EventsDetailsView.as_view(), name ='events_details'),

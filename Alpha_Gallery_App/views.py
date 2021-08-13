@@ -3,6 +3,8 @@ from rest_framework.permissions import AllowAny
 from django.db import models
 from django.shortcuts import render
 from rest_framework import generics , viewsets
+from rest_framework.views import APIView
+from rest_framework.response import Response
 
 from .models import Posts , Events , User
 from .serializer import PostsSerializer, UserSerializer,EventsSerializer
@@ -25,10 +27,6 @@ class EventsDetailsView(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = EventsSerializer
     queryset = Events.objects.all()
 
-class UserViewSet(viewsets.ModelViewSet):
-    queryset = User.objects.all()
-    serializer_class = UserSerializer
-
 
 class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all()
@@ -46,3 +44,7 @@ class UserViewSet(viewsets.ModelViewSet):
         return [permission() for permission in permission_classes]
 
 
+class CurrentUserView(APIView):
+    def get(self, request):
+        serializer = UserSerializer(request.user)
+        return Response(serializer.data)

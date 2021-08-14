@@ -47,12 +47,10 @@ INSTALLED_APPS = [
     'rest_framework.authtoken', 
     'rest_auth',  
     'whitenoise.runserver_nostatic',
-    'corsheaders',
                
 ]
 
 MIDDLEWARE = [
-    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
